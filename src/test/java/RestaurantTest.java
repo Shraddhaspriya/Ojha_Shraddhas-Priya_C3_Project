@@ -62,9 +62,6 @@ class RestaurantTest {
         assertEquals(119+269, restaurant.calculateTotalOfSelectedItemPrices("Sweet corn soup", "Vegetable lasagne"));
     }
 
-    @Test
-    public void calculate_cost_of_zero_selected_items_should_be_zero() {
-        assertEquals(0, restaurant.calculateTotalOfSelectedItemPrices());
-    }
+   
     //<<<<<<<<<<<<<<<<<<<<<<<MENU>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 }
