@@ -29,6 +29,7 @@ public class RestaurantService {
         return restaurantToBeRemoved;
     }
 
+
     public List<Restaurant> getRestaurants() {
         return restaurants;
     }

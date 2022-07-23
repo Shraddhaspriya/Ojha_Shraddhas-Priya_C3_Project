@@ -47,7 +47,10 @@ class RestaurantServiceTest {
         service.removeRestaurant("Amelie's cafe");
         assertEquals(initialNumberOfRestaurants-1, service.getRestaurants().size());
     }
-
+@Test
+public void calculate_cost_of_selected_items_should_be_sum_of_zero(){
+        assertEquals(119+269, restaurant.calculateTotalOfSelectedItemPrices("Sweet corn soup","Vegetable lasagne"));
+}
     @Test
     public void removing_restaurant_that_does_not_exist_should_throw_exception() throws restaurantNotFoundException {
 
